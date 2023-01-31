@@ -63,7 +63,9 @@ install_git(){
 }
 
 install_bt_panel_pro(){
-	curl http://download.bt.cn/install/update6_en.sh && (sleep 8; echo y; sleep 8; echo yes;...) |bash
+	curl http://download.bt.cn/install/update6_en.sh \
+    && (sleep 8; echo y; sleep 8; echo yes;...) | bash update6_en.sh
+
 	echo -e "${Info} 宝塔专业版安装完成，正在进行下一步操作!"
 }
 
